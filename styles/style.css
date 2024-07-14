@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    font-family: 'Fira Code';
+    font-size: 32px;
+}
+
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px ;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover { 
+    color: #19AFFF;
+    font-weight: bold;
+}
+
+#logo {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+#logo_link {
+    width: 100%; 
+    height: auto; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    white-space: nowrap;
+    padding: .5em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.main-content {
+    margin: 2em 4em 2em; 
+}
+
+.body-text, .example-caption {
+    color: #9CDCFE;
+}
+
+.comment-text, .comment-link {
+    color: #006D38;
+}
+
+.in-text-link {
+    color: #19AFFF;
+    text-decoration: none;
+}
+
+.in-text-link:hover, .plan-link:hover {
+    font-weight: bold;
+}
+
+.plan-link {
+    color: #006D38;
+    text-decoration: none;
+}
+
+/* #art-example {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 2em; 
+}
+
+.art-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%; 
+}
+
+.example-caption {
+    color: #9CDCFE; 
+    margin-top: 0.5em; 
+}
+
+
+.css-art-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+} */
+
+
+.flower-pot {
+    position: relative;
+    background: black;
+    width: 950px;
+    height: 1700px;
+    border: 25px solid #19AFFF;
+
+}
+
+.stems, .leaves, .flowers, .pot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+}
+
+.stem-1, .stem-2, .stem-3, .stem-4, .stem-5 {
+    position: absolute;
+    right: 46.5%; 
+    width: 20px;
+    height: 430px;
+    background: #009A60;
+    transform-origin: bottom center; 
+}
+
+.stem-1 {
+    top: 40%; 
+    transform: rotate(-43deg);
+}
+
+.stem-2 {
+    top: 25%; 
+    transform: rotate(-27deg);
+}
+
+.stem-3 {
+    top: 25%; 
+    transform: rotate(6deg);
+}
+
+.stem-4 {
+    top: 30%; 
+    transform: rotate(35deg);
+}
+
+.stem-5 {
+    top: 50%; 
+}
+
+.leaf-1, .leaf-2 {
+    position: absolute;
+    background: #009A60;
+    border-radius: 50%;
+    width: 100px;
+    height: 300px;
+    transform-origin: bottom center; 
+}
+
+.leaf-1 {
+    top: 46%; 
+    right: 42%;
+    transform: rotate(45deg);
+}
+
+.leaf-2 {
+    top: 55%; 
+    right: 42%;
+    transform: rotate(-60deg);
+}
+
+.flower1, .flower2, .flower3, .flower4 {
+    position: absolute;
+}
+
+.flower1 {
+    top: 40%; 
+    right: 55%; 
+}
+
+.flower2 {
+    top: 30%; 
+    right: 5%; 
+}
+
+.flower3 {
+    top: 22%; 
+    right: 47%; 
+}
+
+.flower4 {
+    top: 15%; 
+    right: 22%; 
+}
+
+.petal {
+    position: relative;
+    width: 240px; 
+    height: 240px; 
+}
+
+.petal-1, .petal-2, .petal-3, .petal-4 {
+    position: absolute;
+    background: #D8214D;
+    border-radius: 50%;
+    width: 90px;
+    height: 240px;
+}
+
+.petal-2 {
+    transform: rotate(90deg);
+}
+
+.petal-3 {
+    transform: rotate(-45deg);
+}
+
+.petal-4 {
+    transform: rotate(45deg);
+}
+
+.petal-a {
+    position: relative;
+    top: 50%; 
+    left: 40%; 
+    transform: translate(-50%, -50%); 
+    width: 160px; 
+    height: 160px; 
+}
+
+.petal-a1, .petal-a2, .petal-a3, .petal-a4 {
+    position: absolute;
+    background: #FF3B61;
+    border-radius: 50%;
+    width: 60px;
+    height: 160px;
+}
+
+.petal-a2 {
+    transform: rotate(90deg);
+}
+
+.petal-a3 {
+    transform: rotate(-45deg);
+}
+
+.petal-a4 {
+    transform: rotate(45deg);
+}
+
+.pistil {
+    position: relative;
+    top: 35%; 
+    left: 3%;
+    background: #FFDE59;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.rectangle-1, .rectangle-2 {
+    position: absolute;
+    right: 38.2%; 
+    background: #5D7772;
+    width: 180px;
+    height: 90px;
+}
+
+.rectangle-1 {
+    top: 94.7%; 
+}
+
+.rectangle-2 {
+    top: 74.5%; 
+}
+
+.oval {
+    position: absolute;
+    border-radius: 50%;
+    top: 74.7%; 
+    right: 33%;
+    background: #5D7772;
+    width: 280px;
+    height: 430px; 
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+    padding: 20px; 
+    bottom: 0;
+    width: 100%;
+}
