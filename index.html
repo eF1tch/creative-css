@@ -9,9 +9,10 @@
 </head>
 <body>
     <div id="content">
+
         <header>
-            <a id="logo_link" href="index.html">
-                <img id="logo" src="styles/images/creative-css-logo.svg" alt="Creative CSS Logo">
+            <a class="logo_link" href="index.html">
+                <img class="logo" src="styles/images/main-creative-css-logo.svg" alt="Creative CSS Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -19,146 +20,49 @@
                 <a href="gallery.html">Gallery</a>
             </nav>
         </header>   
-<!-- Adding this comment so i have something to push -->
+
         <section class="hero">
             <img src="styles/images/hero-img-creative-css.png" alt="Hero Image">
             <div class="hero-text">
-                <h1>Welcome to .Creative <span style="color: #FFD700">{</span><span style="color: #9CDCFE">CSS</span><span style="color: #FFD700">}</span> </h1>
+                <h1>Welcome to .Creative <span class="bracket">{</span><span class="bracketed-text">CSS</span><span class="bracket">}</span> </h1>
             </div>
         </section>
+
         <div class="main-content">
-            <section id="intro-text">
-                <p class="body-text"><span style="color: white">.hook</span><span style="color: #FFD700">{</span>
-                    Did you know that CSS code can be used to create simple art?
-                    <span style="color: #FFD700">}</span></p>
-                <p class="body-text"><span style="color: white">.example</span><span style="color: #FFD700">{</span>
-                    CSS code can be used to recreate simple images, like this flower:
-                    <span style="color: #FFD700">}</span></p>
-                    <p class="comment-text">/* Use the inspect property of your browser to see the code of the example images below! */</p>
-            </section>
+
+            <p>.hook<span class="bracket">{</span><br><span class="bracketed-text">Did you know that CSS code can be used to create simple art?</span><br><span class="bracket">}</span></p>
+            <p>.example <span class="bracket">{</span><br><span class="bracketed-text">CSS code can be used to recreate simple images, like this flower:</span><br><span class="bracket">}</span> </p>
+
             <section id="art-example">
                 <div class="art-container">
                     <h2 class="example-caption">Original Image:</h2>
-                    <img id="flower-example" src="styles/images/flower-pot-example.png" alt="A flower pot with 4 red flowers">
+                    <img class="example" src="styles/images/canva-example.svg" alt="A flower pot with 4 red flowers">
                 </div>   
                 <div class="art-container">
                     <h2 class="example-caption">CSS Recreation:</h2>
-                    <div class="css-art-container">
-                        <div class="flower-pot"> <!--This is the CSS Art-->
-                                <div class="stems">
-                                    <div class="stem-1"></div>
-                                    <div class="stem-2"></div>
-                                    <div class="stem-3"></div>
-                                    <div class="stem-4"></div>
-                                    <div class="stem-5"></div>
-                                </div>
-                                <div class="leaves">
-                                    <div class="leaf-1"></div>
-                                    <div class="leaf-2"></div>
-                                </div>
-                                <div class="pot">
-                                    <div class="rectangle-1"></div>
-                                    <div class="oval"></div>
-                                    <div class="rectangle-2"></div>
-                                </div>
-                                <div class="flowers">
-                                    <div class="flower1">
-                                        <div class="petal">
-                                            <div class="petal-1"></div>
-                                            <div class="petal-2"></div>
-                                            <div class="petal-3"></div>
-                                            <div class="petal-4"></div>
-                                            <div class="petal-a">
-                                                <div class="petal-a1"></div>
-                                                <div class="petal-a2"></div>
-                                                <div class="petal-a3"></div>
-                                                <div class="petal-a4"></div>
-                                                <div class="pistil"></div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <div class="flower2">
-                                        <div class="petal">
-                                            <div class="petal-1"></div>
-                                            <div class="petal-2"></div>
-                                            <div class="petal-3"></div>
-                                            <div class="petal-4"></div>
-                                            <div class="petal-a">
-                                                <div class="petal-a1"></div>
-                                                <div class="petal-a2"></div>
-                                                <div class="petal-a3"></div>
-                                                <div class="petal-a4"></div>
-                                                <div class="pistil"></div>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div class="flower3">
-                                        <div class="petal">
-                                            <div class="petal-1"></div>
-                                            <div class="petal-2"></div>
-                                            <div class="petal-3"></div>
-                                            <div class="petal-4"></div>
-                                            <div class="petal-a">
-                                                <div class="petal-a1"></div>
-                                                <div class="petal-a2"></div>
-                                                <div class="petal-a3"></div>
-                                                <div class="petal-a4"></div>
-                                                <div class="pistil"></div>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <div class="flower4">
-                                        <div class="petal">
-                                            <div class="petal-1"></div>
-                                            <div class="petal-2"></div>
-                                            <div class="petal-3"></div>
-                                            <div class="petal-4"></div>
-                                            <div class="petal-a">
-                                                <div class="petal-a1"></div>
-                                                <div class="petal-a2"></div>
-                                                <div class="petal-a3"></div>
-                                                <div class="petal-a4"></div>
-                                                <div class="pistil"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                </div> 
+                    <img class="example" src="styles/images/css-example.svg" alt="flower pot with 4 red flowers">
+                </div>
             </section>
-            <section id="lower-third">
-                <section id="master-example">
-                    <p class="body-text"><span style="color: white">style.mastery-image</span><span style="color: #FFD700">{</span> If one is able to master this medium, they can create images that look hand drawn! Like this pure CSS artwork created by Louise Flanagan (An accomplished full-stack developer) : 
-                        <span style="color: #FFD700">}</span> </p>
-                    <img id="girl-with-pearl-img" src="styles/images/woman-with-earing-css-art.png" alt="An image of a pure css recreation of the Girl with a pearl Earring by Louise Flanagan">
-                    <p class="comment-text">/* See the source code of this art and more by Loise Flanagan here -> <a class="comment-link" href="https://lou-flan.com/" target="_blank">https://lou-flan.com/</a> */</p>
-                </section>
-                <section id="outro-text">
-                    <p class="body-text"><span style="color: white">.reality-check</span> <span style="color: #FFD700">{</span>
-                        This website won’t show you how to create art like that. This is intended as a starting line if you have an interest in CSS artwork!
-                        <span style="color: #FFD700">}</span>
-                    </p>
-                    <p class="body-text"><span style="color: white">.get-going</span> <span style="color: #FFD700">{</span>
-                        To get started learning how to create simple CSS artwork, head on over to the <a class="in-text-link" href="tutorial.html">Tutorial</a> page.
-                        <span style="color: #FFD700">}</span>
-                    </p>
-                    <p class="body-text"><span style="color: white">.fact-check</span> <span style="color: #FFD700">{</span>
-                        If you would like to see more simple CSS artwork, take a look at the <a class="in-text-link" href="gallery.html">Gallery</a> page.
-                        <span style="color: #FFD700">}</span>
-                    </p>
-                </section>
-            </section>
-  
+
+            <p class="comment-text">/* See the code for the css art here -> <a class="comment-link" href="flower-pot.html" target="_blank">flower-pot.html</a> */</p>
+            <p>.style-mastery-image <span class="bracket">{</span><br><span class="bracketed-text">If one is able to master this medium, they can create images that look hand drawn! Like this pure CSS artwork created by Louise Flanagan (An accomplished full-stack developer) :</span><br><span class="bracket">}</span> </p>
+
+            <img class="mastery-img" src="styles/images/woman-with-earing-css-art.png" alt="An image of a pure css recreation of the Girl with a pearl Earring by Louise Flanagan">
+
+            <p class="comment-text">/* See the source code of this art and more by Loise Flanagan here -> <a class="comment-link" href="https://lou-flan.com/" target="_blank">https://lou-flan.com/</a> */</p> 
+            <p>.reality-check <span class="bracket">{</span><br><span class="bracketed-text">This website won’t show you how to create art like that. This is intended as a starting line if you have an interest in CSS artwork!</span><br><span class="bracket">}</span> </p>
+            <p>.get-going <span class="bracket">{</span><br><span class="bracketed-text">To get started learning how to create simple CSS artwork, head on over to the <a class="in-text-link" href="tutorial.html">Tutorial</a> page.</span><br><span class="bracket">}</span> </p>
+            <p>.fact-check <span class="bracket">{</span><br><span class="bracketed-text">If you would like to see more simple CSS artwork, take a look at the <a class="in-text-link" href="gallery.html">Gallery</a> page.</span><br><span class="bracket">}</span> </p>
+
         </div>
-    <footer>
-        <a id="logo_link" href="index.html">
-            <img id="logo" src="styles/images/creative-css-logo.svg" alt="Creative CSS Logo">
-        </a>
-        <div>
-            <a class="plan-link" href="site-plan.html">Site Plan</a>
-        </div>
-    </footer>
+        <footer>
+            <a class="logo_link" href="index.html">
+                <img class="footer-logo" src="styles/images/creative-css-logo.svg" alt="Creative CSS Logo">
+            </a>
+            <div>
+                <a class="plan-link" href="site-plan.html">Site Plan</a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

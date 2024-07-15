@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-/* General Styles */
 body, html {
     height: 100%;
     margin: 0 auto;
@@ -41,12 +40,15 @@ nav a {
     display: inline-block;
 }
 
-nav a:hover { 
-    color: #19AFFF;
-    font-weight: bold;
+.logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin-top: 10px;
 }
 
-#logo {
+#footer-logo {
     max-width: 200px;
     width: 100%;
     height: auto;
@@ -58,7 +60,6 @@ nav a:hover {
     height: auto; 
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .hero {
@@ -66,6 +67,10 @@ nav a:hover {
     width: 100%;
     height: 60vh;
     overflow: hidden;
+}
+
+.main-content {
+    margin: 2em 4em 2em; 
 }
 
 .hero img {
@@ -86,16 +91,53 @@ nav a:hover {
     text-align: center;
 }
 
-.main-content {
-    margin: 2em 4em 2em; 
+#art-example {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    text-align: center; 
+}
+
+.art-container {
+    text-align: center; 
+}
+
+.example-caption {
+    margin-top: 10px; 
+}
+
+.mastery-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #19AFFF;
+}
+
+h1{
+    font-weight: lighter;
+}
+
+h1, p {
+    color: white;
+}
+.bracket {
+  color: #FFD700;
+}
+.bracketed-text {
+  color: #9CDCFE;
 }
 
 .body-text, .example-caption {
     color: #9CDCFE;
 }
 
-.comment-text, .comment-link {
+.comment-text {
     color: #006D38;
+}
+
+.comment-link {
+    color: #009A0F;
+    text-decoration: none;
 }
 
 .in-text-link {
@@ -103,50 +145,36 @@ nav a:hover {
     text-decoration: none;
 }
 
-.in-text-link:hover, .plan-link:hover {
-    font-weight: bold;
-}
-
 .plan-link {
     color: #006D38;
     text-decoration: none;
 }
 
-/* #art-example {
+.in-text-link:hover, .plan-link:hover, nav a:hover, .comment-link:hover{
+    font-weight: bold;
+}
+
+.example{
+    width: 350px;
+}
+
+.flower-pot-fix{ 
+    width:200px;
+}
+
+footer {
     display: flex;
-    justify-content: space-around; 
-    align-items: center; 
-    margin-top: 2em; 
+    justify-content: space-between; 
+    align-items: flex-end;
+    padding: 20px;
+    width: 98%;
 }
 
-.art-container {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center;
-}
-
-.image-container img {
-    max-width: 100%; 
-}
-
-.example-caption {
-    color: #9CDCFE; 
-    margin-top: 0.5em; 
-}
-
-
-.css-art-container {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-} */
-
+/* This css is only for the flower pot */
 
 .flower-pot {
     position: relative;
-    background: black;
+    background: transparent;
     width: 950px;
     height: 1700px;
     border: 25px solid #19AFFF;
