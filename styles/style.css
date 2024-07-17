@@ -113,6 +113,61 @@ nav a {
     border: 10px solid #19AFFF;
 }
 
+.art-example {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: .5vh solid #19AFFF;
+}
+
+.tutorial-example {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border: .5vh solid #19AFFF;
+
+}
+
+.puzzle-example {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.image-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content {
+    margin-left: 25px; 
+}
+
+.puzzle-parts {
+    width: 30vh;
+}
+
+.red-peak{
+    color: red;
+}
+.blue-peak{
+    color: blue;
+}
+.yellow-peak{
+    color: yellow;
+}
+.green-peak{
+    color: #00FF00;
+}
+
 h1{
     font-weight: lighter;
 }
@@ -120,13 +175,18 @@ h1{
 h1, p {
     color: white;
 }
+
 .bracket {
   color: #FFD700;
 }
+
 .bracketed-text {
   color: #9CDCFE;
 }
 
+.layer-name {
+    color:#F07F3C;
+}
 .body-text, .example-caption {
     color: #9CDCFE;
 }
@@ -167,7 +227,7 @@ footer {
     justify-content: space-between; 
     align-items: flex-end;
     padding: 20px;
-    width: 98%;
+    width: 95%;
 }
 
 /* This css is only for the flower pot */
@@ -358,11 +418,104 @@ footer {
     height: 430px; 
 }
 
-footer {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-end;
-    padding: 20px; 
-    bottom: 0;
-    width: 100%;
+/* This CSS is only for the sunset */
+
+.mt-sunset {
+    position: relative;
+    background-color: transparent;
+    width: 480px; 
+    height: 240px;
+    border: 10px solid #19AFFF;
+    transform-origin: top left;
+}
+
+.sunset1 {
+    width: 480px; 
+    height: 240px;
+    border-radius: 240px 240px 0 0;
+    background-color: #E61A23;
+}
+
+.sunset2 {
+    position: absolute;
+    top: 62.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px; 
+    height: 180px;
+    border-radius: 180px 180px 0 0;
+    background-color: #ED7622;
+}
+
+.sunset3 {
+    position: absolute;
+    top: 66.7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;  
+    height: 120px;
+    border-radius: 120px 120px 0 0;
+    background-color: #F7B618;
+}
+
+.mountain {
+    position: absolute;
+    top: 41.7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0; 
+    height: 0; 
+    border-left: 135px solid transparent;
+    border-right: 135px solid transparent; 
+    border-bottom: 140px solid #213851;
+}
+
+.snowy-peak {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    width: 270px;
+    height: 140px;
+    /* background-color: aqua; */
+}
+
+.peak1, .peak2, .peak3, .peak4 {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.peak1 {
+    top: 30%; 
+    left: 37%; 
+    border-left: 10.3px solid transparent;
+    border-right: 10.3px solid transparent;
+    border-bottom: 111.5px solid white;
+    transform: translate(-50%, -50%) rotate(-131.5deg); 
+}
+
+.peak2 {
+    top: 23%; 
+    left: 47%; 
+    border-left: 14.5px solid transparent;
+    border-right: 14.5px solid transparent;
+    border-bottom: 58.1px solid white;
+    transform: translate(-50%, -50%) rotate(49.3deg);
+}
+
+.peak3 {
+    top: 23%; 
+    left: 52%; 
+    border-left: 15.05px solid transparent;
+    border-right: 15.05px solid transparent;
+    border-bottom: 19.8px solid white;
+    transform: translate(-50%, -50%) rotate(162.6deg);
+}
+
+.peak4 {
+    top: 24%; 
+    left: 60.2%; 
+    border-left: 8.3px solid transparent;
+    border-right: 8.3px solid transparent;
+    border-bottom: 90px solid white;
+    transform: translate(-50%, -50%) rotate(131.5deg);
 }

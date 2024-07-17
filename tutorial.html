@@ -3,36 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative CSS | tutorial</title>
+    <title>Creative CSS | Tutorial</title>
     <link rel="icon" type="image/svg+xml" href="styles/images/creative-css-favicon.svg">
     <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <a class="logo_link" href="index.html">
-            <img class="logo" src="styles/images/main-creative-css-logo.svg" alt="Creative CSS Logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="tutorial.html">Tutorial</a>
-            <a href="gallery.html">Gallery</a>
-        </nav>
-    </header> 
-    <div id="content"> 
-  
+    <div id="content">
+
+        <header>
+            <a class="logo_link" href="index.html">
+                <img class="logo" src="styles/images/main-creative-css-logo.svg" alt="Creative CSS Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="tutorial.html">Tutorial</a>
+                <a href="gallery.html">Gallery</a>
+            </nav>
+        </header>   
+
         <section class="hero">
             <img src="styles/images/hero-img-creative-css.png" alt="Hero Image">
             <div class="hero-text">
-                <h1>.Learn<span class="bracket">{</span><span class="bracketed-text">The Process</span><span class="bracket">}</span> </h1>
+                <h1>Learn <span class="bracket">{</span><span class="bracketed-text">The Process</span><span class="bracket">}</span> </h1>
             </div>
         </section>
-        <footer>
-            <a class="logo_link" href="index.html">
-                <img class="footer-logo" src="styles/images/creative-css-logo.svg" alt="Creative CSS Logo">
-            </a>
-            <div>
-                <a class="plan-link" href="site-plan.html">Site Plan</a>
+
+        <div class="main-content">
+
+            <p>.intro <span class="bracket">{</span><br><span class="bracketed-text">Learning to create artwork with CSS takes time and a good foundation on CSS positioning. This Tutorial will walk you through the basics of every step needed to create artwork with nothing but HTML and CSS. </span><br><span class="bracket">}</span></p>
+
+            <p class="comment-text">/* For the best experience, it is recommended to follow this tutorial on desktop */</p>
+
+            <p>.preview <span class="bracket">{</span><br><span class="bracketed-text">The image we will be recreating today is a simple graphic of a snowy mountain with a sunset backdrop: </span><br><span class="bracket">}</span></p>
+
+            <img class="tutorial-example" src="styles/images/tutorial-example.svg" alt="An image of a mountain in front of a sunset">
+
+            <p class="comment-text">/* See the code for the css art here -> <a class="comment-link" href="sunset.html" >sunset.html</a> */</p>
+
+            <p>.puzzle-pieces <span class="bracket">{</span><br><span class="bracketed-text">This image is created using 3 different shapes; a rectangle, 5 triangles and 3 semicircles for a total of 9 objects:</span><br><span class="bracket">}</span></p>
+
+            <img class="puzzle-example" src="styles/images/puzzle-example.svg" alt="An image of a mountain in front of a sunset">
+
+            <p>.piece-of-layered-cake <span class="bracket">{</span><br><span class="bracketed-text">We will start by looking at the image and identifying each layer for the image:</span><br><span class="bracket">}</span></p>
+
+            <div class="image-with-text">
+                <img class="puzzle-parts" src="styles/images/puzzle-border.svg" alt="An image of the shapes used to create the graphic">
+                <div class="text-content">
+                    <p>.Layer-1 <span class="bracket">{</span><br><span class="bracketed-text">Layer 1 will be a transparent Rectangle with a blue border to define the area that the graphic occupies. We will name this layer <span class="layer-name">“mt-sunset”</span> as it will be the container for the whole graphic</span><br><span class="bracket">}</span></p>
+                </div>
             </div>
-        </footer>
+
+            <div class="image-with-text">
+                <img class="puzzle-parts" src="styles/images/puzzle-red.svg" alt="A red semicircle">
+                <div class="text-content">
+                    <p>.Layer-2 <span class="bracket">{</span><br><span class="bracketed-text">Layer 2 will be this red semicircle to look like the first layer of the sunset. We will name this layer <span class="layer-name">“sunset1”</span></span><br><span class="bracket">}</span></p>
+                </div>
+            </div>
+
+            <div class="image-with-text">
+                <img class="puzzle-parts" src="styles/images/puzzle-orange.svg" alt="An orange semicircle">
+                <div class="text-content">
+                    <p>.Layer-3 <span class="bracket">{</span><br><span class="bracketed-text">Layer 3 will be this orange semicircle to look like the second layer of the sunset. We will name this layer <span class="layer-name">“sunset2”</span></span><br><span class="bracket">}</span></p>
+                </div>
+            </div>
+
+            <div class="image-with-text">
+                <img class="puzzle-parts" src="styles/images/puzzle-yellow.svg" alt="A yellow semicircle">
+                <div class="text-content">
+                    <p>.Layer-4 <span class="bracket">{</span><br><span class="bracketed-text">Layer 4 will be this yellow semicircle to look like the third layer of the sunset. We will name this layer <span class="layer-name">“sunset3”</span></span><br><span class="bracket">}</span></p>
+                </div>
+            </div>
+
+            <div class="image-with-text">
+                <img class="puzzle-parts" src="styles/images/puzzle-mountain.svg" alt="A navy blue triangle">
+                <div class="text-content">
+                    <p>.Layer-5 <span class="bracket">{</span><br><span class="bracketed-text">Layer 5 will be this navy blue triangle to look like a mountain, so we will name this layer <span class="layer-name">“mountain”</span></span><br><span class="bracket">}</span></p>
+                </div>
+            </div>
+            <div class="image-with-text">
+                <img class="puzzle-pieces" src="styles/images/puzzle-snow.svg" alt="An image of a mountain in front of a sunset">
+                <div class="text-content">
+                    <p>.Layer-6 <span class="bracket">{</span><br><span class="bracketed-text">Layer 6 will be 4 white triangles arranged in a pattern to look like a snowy peak, so we will name this layer <span class="layer-name">“snowy-peak”</span> with four subdivisions named <span class="red-peak">“peak1”</span>, <span class="blue-peak">“peak2”</span>, <span class="yellow-peak">“peak3”</span>,and <span class="green-peak">“peak4”</span></span><br><span class="bracket">}</span></p>
+                </div>
+            </div>
+            <p>.codepen-intro <span class="bracket">{</span><br><span class="bracketed-text">After identifying all of the layers, it’s time to start writing some code! For the best experience, open this <a class="in-text-link" href="https://codepen.io/eF1tch/pen/MWMwrzy" target="_blank">CodePen</a> in a secondary tab to follow along with the tutorial!</span><br><span class="bracket">}</span> </p>
+
+            <p class="comment-text">/* CodePen is an online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets - perfect for experimenting with code for free! */</p> 
+
+            <p>.HTML-structure <span class="bracket">{</span><br><span class="bracketed-text">We will start by creating all the sections in HTML. Half the work is already done: the layers we created and named will represent each division. </span><br><span class="bracket">}</span></p>
+
+            <div class="codebox">
+            </div>
+
+        </div>
     </div>
 </body>
+</html>
