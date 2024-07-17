@@ -1,8 +1,0 @@
-1. Validate current code to ensure mistakes are not copied. 
-2. Take the <span> tags in the start of the page and change them to use style from the css instead of adding the style directly in the HTML
-3. apply that format to the whole page to correct the text
-Create and add a screenshot of the css art, then add a "comment" below the text linking to a codepen to showcase the code. (codepen also needs to be created) Adding the art directly into the html is no longer an option. also, check EVERY image in the image folder and ensure that every image there is used in the website, and each picture that is on the page needs to be opitimised to be less that 100kb
-4. Add the content to page 1 using the same strat of displaying the art as svg, webp, or png files, then add a link to a codepen to show the actual css
-5. Add content to page 2, you need to create 3 different art pieces to display on the website in css, then make a "comment" to describe any special things used.
-6. add a "web component" for the assignment. 
-7. either complete these steps by Wednesday to get feedback in class or schedule a meeting with bro C before the end of the week
