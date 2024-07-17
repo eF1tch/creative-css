@@ -230,6 +230,56 @@ footer {
     width: 95%;
 }
 
+ /* Dropup Button */
+ .dropbtn {
+    background-color: black;
+    color: #9CDCFE;
+    padding: 16px;
+    font-size: 32px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropup content */
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropup content (Hidden by Default) */
+  .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: black;
+    opacity: 80%;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropup */
+  .dropup-content a {
+    color: #9CDCFE;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropup links on hover */
+  .dropup-content a:hover {
+    color: #19AFFf;
+    font-weight: bold;
+}
+
+
+  
+  /* Show the dropup menu on hover */
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropup button when the dropup content is shown */
+
+.dropup-content a:hover {font-weight: bold;}
 /* This css is only for the flower pot */
 
 .flower-pot {
